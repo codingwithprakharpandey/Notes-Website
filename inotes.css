@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Acme", sans-serif;
+  overflow-x: hidden;
+}
+body {
+  background-color: #101820ff;
+}
+nav {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  background: #f2aa4cff;
+  overflow: wrap;
+  width: 100vw;
+  height: 4vw;
+}
+.logo {
+  margin-left: -78vw;
+  font-size: 3vw;
+  color: #101820ff;
+  font-family: "Lobster", cursive;
+}
+.logo:hover {
+  cursor: default;
+}
+.home {
+  height: 3.5vw;
+  width: 6vw;
+  background-color: #f2aa4cff;
+  color: #101820ff;
+  border: 2px solid #f2aa4cff;
+  margin-left: 5vw;
+  font-weight: 800;
+  font-size: 1.7vw;
+  transition-duration: 0.1s;
+}
+.home:hover {
+  cursor: pointer;
+  border-bottom: 4px solid #101820ff;
+}
+.search-container {
+  display: flex;
+  justify-content: right;
+  position: absolute;
+  align-items: center;
+  margin-right: -56vw;
+}
+.Search {
+  background-color: #101820ff;
+  border: 1px solid #101820ff;
+  color: #f2aa4cff;
+  border-radius: 0.3vw;
+  padding-left: 3vw;
+  text-transform: capitalize;
+  font-size: 1.5vw;
+  width: 25vw;
+  height: 2.5vw;
+}
+.search-btn {
+  background-color: #101820ff;
+  color: #f2aa4cff;
+  border: 1px solid #101820ff;
+  border-radius: 0.3vw;
+  margin-left: 2vw;
+  font-size: 1.2vw;
+  width: 5vw;
+  height: 3vw;
+  transition-duration: 0.5s;
+}
+.search-btn:hover {
+  cursor: pointer;
+  background-color: #f2aa4cff;
+  color: #101820ff;
+}
+.addnote-container {
+  overflow: hidden;
+  border-radius: 0.5vw;
+  color: #f2aa4cff;
+  border: 3px solid #101820ff;
+  width: 60vw;
+  height: 50vw;
+  margin-left: 20vw;
+  margin-top: 6vw;
+  background-color: #101820ff;
+  box-shadow: 10px 10px 25px black, 10px 10px 25px #101820ff,
+    inset 5px 5px 25px black, inset 5px 5px 25px #101820ff;
+}
+.addnote-h1 {
+  margin-left: 5vw;
+  padding-top: 1.5vw;
+  font-size: 3.5vw;
+  color: rgb(202, 140, 60);
+}
+.addnote-h1:hover{
+  cursor: default;
+}
+#addtext {
+  width: 45vw;
+  height: 15vw;
+  margin-left: 5vw;
+  margin-top: 1.5vw;
+  padding-left: 2vw;
+  padding-top: .5vw;
+  padding-right: 2vw;
+  border: 2px solid #f2aa4cff;
+  border-radius: 0.3vw;
+  text-transform: capitalize;
+  font-size: 1.5vw;
+  background-color: #f2aa4cff;
+  color: #101820ff;
+}
+.addnote-btn {
+  margin-left: 5vw;
+  margin-top: 2vw;
+  border-radius: 0.3vw;
+  width: 7vw;
+  height: 3vw;
+  font-weight: 800;
+  font-size: 1.3vw;
+  border: 2px solid #f2aa4cff;
+  background-color: #f2aa4cff;
+  color: #101820ff;
+  transition: 0.5s;
+}
+.addnote-btn:hover {
+  background-color: #101820ff;
+  color: #f2aa4cff;
+  cursor: pointer;
+}
+.yourNotes {
+  margin-top: 3vw;
+  margin-left: 40vw;
+  font-size: 5vw;
+  color: #f2aa4cff;
+}
+.yourNotes:hover{
+  cursor: default;
+}
+.notes-container {
+  background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.5vw;
+  border: 3px solid #101820ff;
+  color: #f2aa4cff;
+  padding-left: 5vw;
+  padding-top: 1vw;
+  padding-bottom: 4vw;
+  width: 78vw;
+  margin-left: 10vw;
+  margin-right: 0vw;
+  margin-bottom: 5vw;
+  margin-top: 3vw;
+  height: 35vw;
+  background-color: #101820ff;
+  box-shadow: 10px 10px 25px black, 10px 10px 25px #101820ff,
+    inset 5px 5px 25px black, inset 5px 5px 25px #101820ff;
+}
+.inside-notes{
+  border-radius: .3vw;
+  background-color: #f2aa4cff;
+  color: #101820ff;
+  overflow-wrap: break-word;
+  font-size: 1.5vw;
+  margin-left: 2vw;
+  margin-top: 2vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 2vw;
+  padding-top: 2vw;
+  width: 30vw;
+  height: 30vw;
+}
+.notes-desc{
+  margin-top: 2vw;
+}
+.delete-btn{
+  font-size: 1.5vw;
+  width: 10vw;
+  height: 3.5vw;
+  background-color: #101820ff;
+  color: #f2aa4cff;
+  border: 2px solid #101820ff;
+  border-radius: .3vw;
+  margin-top: 2vw;
+  transition: .5s;
+}
+.delete-btn:hover{
+  cursor: pointer;
+  background-color: #f2aa4cff;
+  color: #101820ff;
+}
+.default-message{
+  color:rgb(146, 102, 44) ;
+  margin-top: 16vw;
+  margin-left: 15vw;
+  font-size: 3vw;
+}
+.default-message:hover{
+    cursor: default;
+}
+#addtext::placeholder{
+  color: rgb(13, 16, 20);
+}
+::-webkit-scrollbar {
+  width: 0;
+  background-color:rgb(146, 102, 44) ;
+  border-radius: .5vw;
+} 
+.notetitle-h1{
+  margin-top: 3vw;
+  margin-left: 5vw;
+  color:rgb(186, 127, 50) ;
+  font-size: 4vw;
+}
+.title{
+  margin-left: 5vw;
+  margin-top: 2vw;
+  height: 5vw;
+  width: 40vw;
+  font-size: 1.5vw;
+  padding-left: 2vw;
+  background-color: #f2aa4cff;
+  color: #101820ff;
+  border-radius: .3vw;
+  border:2px solid #f2aa4cff;
+}
+.title::placeholder{
+  color: rgb(25, 38, 51);
+}

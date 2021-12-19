@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iNotes - Makes easy</title>
+    <link rel="stylesheet" href="inotes.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1 class="logo">iNotes</h1>
+        <div class="button-container">
+          <button onclick="window.location.href = 'inotes.html'"; class="home">Home</button>
+        </div>
+        <div class="search-container">
+          <input id="searchtxt" placeholder="Search.." class="Search" type="text"/>
+          <button class="search-btn">Search</button>
+        </div>
+      </nav>
+    </header>
+    <div class="addnote-container">
+      <div>
+        <h1 class="notetitle-h1">Note Title</h1>
+        <input type="text" class="title" placeholder="Add A Note Title" id="title" >
+        <h1 class="addnote-h1">Add Note</h1>
+        <textarea name="note" id="addtext" placeholder="Write your Text Here" cols="30" rows="10"></textarea>
+        <br />
+        <button id="addnotes-btn" class="addnote-btn">Add Note</button>
+      </div>
+    </div>
+    <h1 class="yourNotes">Your Notes</h1>
+    <div id="notes" class="notes-container">
+    </div>
+    <script src="inotes.js"></script>
+  </body>
+</html>
